@@ -24,12 +24,6 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/mnt/shared" = {
-    device = ".host:/shared";
-    fsType = "fuse./run/current-system/sw/bin/vmhgfs-fuse";
-    options = ["umask=22" "uid=1000" "gid=100" "allow_other" "defaults" "auto_unmount"];
-  };
-
   swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "aarch64-linux";
