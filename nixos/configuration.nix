@@ -109,6 +109,7 @@
     uv
     python314
     open-vm-tools
+    libxslt
   ];
 
   # Graphics driver and VM support
