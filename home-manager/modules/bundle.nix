@@ -4,6 +4,7 @@
     ./btop.nix
     ./firefox.nix
     ./nvim.nix
+    ./zsh.nix
   ];
 
   home.packages = with pkgs; [
