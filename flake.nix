@@ -41,7 +41,7 @@
       };
 
       # User config in /home-manager
-      homeConfigurations.nix = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.ghost = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         extraSpecialArgs = { inherit nixvim; };
         modules = [ ./home-manager/home.nix ];

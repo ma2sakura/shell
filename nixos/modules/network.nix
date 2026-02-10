@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  networking.hostName = "nixos";
+  networking.hostName = "shell";
   networking.networkmanager = {
     enable = true;
     plugins = with pkgs; [
@@ -10,6 +10,6 @@
   };
   
   networking.hosts = {
-    "10.129.13.188" = [ "facts.htb" ];
+
   };
 }

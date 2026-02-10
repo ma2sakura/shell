@@ -1,8 +1,9 @@
 { pkgs, ... }:
 {
-  users.users.nix = {
+  users.users.ghost = {
     isNormalUser = true;
-    description = "nix";
+    uid = 1001;
+    description = "ghost";
     extraGroups = [
       "networkmanager"
       "wheel"

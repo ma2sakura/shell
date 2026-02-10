@@ -14,8 +14,8 @@
   };
 
   home = {
-    username = "nix";
-    homeDirectory = "/home/nix";
+    username = "ghost";
+    homeDirectory = "/home/ghost";
     stateVersion = "25.11";
   };
 

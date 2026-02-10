@@ -131,7 +131,7 @@
   fileSystems."/mnt/shared" = {
     device = ".host:/shared";
     fsType = "fuse./run/current-system/sw/bin/vmhgfs-fuse";
-    options = ["umask=22" "uid=1000" "gid=100" "allow_other" "defaults" "auto_unmount"];
+    options = ["umask=22" "uid=1001" "gid=100" "allow_other" "defaults" "auto_unmount"];
   };
 
   system.stateVersion = "25.11";
