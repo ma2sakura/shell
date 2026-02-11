@@ -45,7 +45,7 @@
     };
 
     # The "Meat" of the config: Custom Logic, Bindings, and Styles
-    initExtra = ''
+    initContent = ''
       fpath+=(${pkgs.pure-prompt}/share/zsh/site-functions)
       autoload -U promptinit; promptinit
       prompt pure
@@ -84,9 +84,6 @@
       bindkey '\eOA' history-beginning-search-backward
       bindkey '\e[B' history-beginning-search-forward
       bindkey '\eOB' history-beginning-search-forward
-
-      bindkey '^I' menu-select
-      bindkey "$terminfo[kcbt]" menu-select
     '';
   };
 }
