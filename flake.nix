@@ -33,9 +33,14 @@
       # System config in /nixos
       nixosConfigurations."shell" = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit pkgs; };
+#        specialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.pkgs = pkgs; }
+          {
+            nixpkgs.overlays = [
+              (import ./nixos/overlays/nmap-unleashed.nix)
+            ];
+          }
           ./nixos/configuration.nix
         ];
       };
