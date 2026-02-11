@@ -31,7 +31,7 @@
     in
     {
       # System config in /nixos
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."shell" = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit pkgs; };
         modules = [
