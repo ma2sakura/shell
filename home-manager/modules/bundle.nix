@@ -5,6 +5,7 @@
     ./firefox.nix
     ./nvim.nix
     ./zsh.nix
+    ./git.nix
   ];
 
   home.packages = with pkgs; [
