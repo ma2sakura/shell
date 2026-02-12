@@ -21,6 +21,13 @@
       ZSH_COLORIZE_CHROMA_FORMATTER = "terminal256";
     };
 
+    shellAliases = {
+      l = "eza -lah";
+      la = "eza -lAh";
+      ll = "eza -lh";
+      cleanup = "sudo nix-collect-garbage -d";
+    };
+
     history = {
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
