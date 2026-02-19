@@ -7,6 +7,7 @@
     ./zsh.nix
     ./git.nix
     ./fastfetch.nix
+    ./caido.nix
   ];
 
   home.packages = with pkgs; [
