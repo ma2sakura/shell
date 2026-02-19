@@ -6,6 +6,7 @@
     ./nvim.nix
     ./zsh.nix
     ./git.nix
+    ./fastfetch.nix
   ];
 
   home.packages = with pkgs; [
