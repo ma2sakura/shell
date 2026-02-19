@@ -1,12 +1,20 @@
 { config, pkgs, ... }:
 {
   networking.hostName = "shell";
-  networking.networkmanager = {
+  networking.nameservers = [
+    "1.1.1.1"
+    "1.0.0.1"
+  ];
+
+  services.resolved = {
     enable = true;
-    plugins = with pkgs; [
-      networkmanager-l2tp
+    dnssec = "true";
+    domains = [ "~." ];
+    fallbackDns = [
+      "1.1.1.1"
+      "1.0.0.1"
     ];
-    insertNameservers = [ "1.1.1.1" "1.0.0.1" ];
+    dnsovertls = "true";
   };
   
   networking.hosts = {
