@@ -4,5 +4,6 @@
     nmap
     nmap-unleashed
     caido
+    gobuster
   ];
 }
