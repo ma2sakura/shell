@@ -16,6 +16,10 @@
     ];
     dnsovertls = "true";
   };
+
+  networking.firewall.allowedTCPPortRanges = [
+      { from = 1330; to = 1340; }
+    ];
   
   networking.hosts = {
 
